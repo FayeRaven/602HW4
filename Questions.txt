@@ -1,0 +1,35 @@
+1. Explain the importance of Docker in modern software development, provide 2 examples. (20 points)
+
+    Docker allows developers to make their applications much more portable during the development phase.
+    It allows developers to make environments for their applications which will create and identical space
+    with identical variables on many different machines. It also allows for easier scalability of applications.
+    py
+2. Explain how Docker containers are different from virtual machines, provide 2 examples. (20 points)
+
+    Virtual machines are meant to make applications available across different hardware while docker allows
+    applications to be run on different operating systems. For example, a VM will allow for a mac computer
+    to run a copy of Windows and use Windows applications. This is better in situations where an entire machine
+    needs to be emulated. Docker, however, uses containers which allow for containers, which contains everything
+    an application needs to run anywhere, which makes it much more portable. For example, a docker container will
+    contain all the commands necessary for installing packages that will allow the application to run.
+
+3. Find examples for use cases for docker-compose, and make the files tree for each use case (2 use cases) (20 points)
+
+    Web App with a Database Backend
+        project/
+        ├── docker-compose.yml
+        ├── webapp/
+        │   ├── Dockerfile
+        │   └── app_code.py
+        └── database/
+            ├── Dockerfile
+            └── db_data/
+
+    Web Server
+        project/
+        │
+        ├── docker-compose.yml
+        │
+        └── webserver/
+            ├── Dockerfile
+            └── index.html
